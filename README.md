@@ -13,3 +13,6 @@ Bem vindo ao meu Github!<br>Me chamo Antônio e estou cursando informática na E
 
 <img widht="280" height="270" alt="8MSgG1" src="https://media.giphy.com/media/l4EoRRqXxn1OLiP1m/giphy.gif" />
 
+### Linguagens e Tecnologias:
+
+<img src="https://githubusercontent.com" height="35" alt="HTML5" /> <img src="https://githubusercontent.com" height="35" alt="CSS3" /> <img src="https://githubusercontent.com" height="35" alt="JavaScript" />
