@@ -12,3 +12,10 @@ Bem vindo ao meu Github!<br>Me chamo Antônio e estou cursando informática na E
 
 <img widht="280" height="270" alt="8MSgG1" src="https://media.giphy.com/media/l4EoRRqXxn1OLiP1m/giphy.gif" />
 
+< picture align = " center " >
+
+< source media = " (prefers-color-scheme: dark) " srcset = " https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake-dark.svg " >
+
+< source media = " (prefers-color-scheme: light) " srcset = " https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake-dark.svg " >
+
+< img align = " center " alt = " Animação de cobra da grade de contribuições do GitHub " src = " https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake.svg " >
