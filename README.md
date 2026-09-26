@@ -1,7 +1,7 @@
 ## falae 👋 
 
 # About Me☕:
-<img width="280" height="270" alt="8MSgG1" src="https://github.com/user-attachments/assets/a8aef445-33b3-4af1-b4c0-a9442f1982a5" />
+<img widht="280" height="270" alt="8MSgG1" src="https://github.com/user-attachments/assets/a8aef445-33b3-4af1-b4c0-a9442f1982a5" />
 
 Bem vindo ao meu Github!<br>Me chamo Antônio e estou cursando informática na EEEP.Deputado Roberto Mesquita 
 
@@ -19,3 +19,4 @@ Bem vindo ao meu Github!<br>Me chamo Antônio e estou cursando informática na E
 < source media = " (prefers-color-scheme: light) " srcset = " https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake-dark.svg " >
 
 < img align = " center " alt = " Animação de cobra da grade de contribuições do GitHub " src = " https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake.svg " >
+
