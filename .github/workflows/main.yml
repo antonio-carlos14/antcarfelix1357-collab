@@ -1,0 +1,49 @@
+name: Validação de Cobrança por Commits
+
+on:
+  push:
+    branches:
+      - main # Altere para a branch que deseja proteger
+
+jobs:
+  verificar-pagamento:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Garante o histórico para contar os commits corretamente
+
+      - name: Contar commits enviados no Push
+        id: count_commits
+        run: |
+          # Obtém a lista de commits enviados neste push específico
+          COMMITS_COUNT=$(git rev-list --count ${{ github.event.before }}..${{ github.event.after }} 2>/dev/null || echo "1")
+          echo "TOTAL_COMMITS=$COMMITS_COUNT" >> $GITHUB_ENV
+          echo "Usuário ${{ github.actor }} enviou $COMMITS_COUNT commit(s)."
+
+      - name: Processar cobrança fictícia / Validação de Créditos
+        run: |
+          # Defina o preço por commit (ex: R$ 0,50)
+          PRECO_POR_COMMIT=0.50
+          CUSTO_TOTAL=$(echo "$TOTAL_COMMITS * $PRECO_POR_COMMIT" | bc 2>/dev/null || echo "$((TOTAL_COMMITS * 50)) centavos")
+          
+          echo "==============================================="
+          echo " FATURAMENTO GITHUB ACTIONS "
+          echo "==============================================="
+          echo "Dev: @${{ github.actor }}"
+          echo "Quantidade de Commits: $TOTAL_COMMITS"
+          echo "Taxa calculada: R$ $CUSTO_TOTAL"
+          echo "==============================================="
+          
+          # Exemplo de validação lógica:
+          # Se você quiser bloquear o commit caso o usuário precise pagar, adicione regras aqui.
+          # Para simular uma rejeição por falta de saldo, descomente as linhas abaixo:
+          
+          # echo "Erro: @${{ github.actor }} não possui créditos suficientes para commitar!"
+          # exit 1
+
+      - name: Notificar sucesso do commit pago
+        if: success()
+        run: echo "Transação simulada com sucesso! Commits integrados."
