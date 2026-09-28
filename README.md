@@ -1,4 +1,4 @@
-## falae 👋 
+## falaee 👋 
 
 # About Me☕:
 <img widht="280" height="270" alt="8MSgG1" src="https://github.com/user-attachments/assets/a8aef445-33b3-4af1-b4c0-a9442f1982a5" />
