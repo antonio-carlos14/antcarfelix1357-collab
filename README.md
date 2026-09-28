@@ -12,3 +12,8 @@ Bem vindo ao meu Github!<br>Me chamo Antônio e estou cursando informática na E
 
 <img widht="280" height="270" alt="8MSgG1" src="https://media.giphy.com/media/l4EoRRqXxn1OLiP1m/giphy.gif" />
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/antonio-carlos14/antonio-carlos14/output/github-contribution-grid-snake.svg">
+</picture>
